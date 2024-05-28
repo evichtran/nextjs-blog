@@ -1,7 +1,6 @@
 export default function Home() {
   return (
     <div>
-      {/* <h1>NinjaDev Team</h1> */}
       <ul className="nav">
         <li>
           <a href="#">Homepage</a>
@@ -41,7 +40,7 @@ export default function Home() {
           <a href="#">Course</a>
           <ul className="sub-menu">
             <li>
-              <a href="#">Cơ bản</a>
+              <a href="#">Basic</a>
               <ul className="sub-menu">
                 <li>
                   <a href="#">HTML</a>
@@ -55,7 +54,7 @@ export default function Home() {
               </ul>
             </li>
             <li>
-              <a href="#">Nâng cao</a>
+              <a href="#">Advanced</a>
               <ul className="sub-menu">
                 <li>
                   <a href="#">Nextjs(Frontend)</a>
@@ -78,6 +77,28 @@ export default function Home() {
         </li>
       </ul>
       <button className="button">Register</button>
+      <h1>NinjaDev Team</h1>
+      <h4>
+        The team is developed by EvichTran - team leader, senior developer, a
+        hacker and a wibu
+      </h4>
+      <button className="button2">
+        <div className="glowing">
+          <div className="glowing-inner"></div>
+        </div>
+        <div className="button-text">Click here to register!</div>
+      </button>
+      <h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+        mollitia voluptatibus repudiandae dicta hic quisquam omnis in quibusdam
+        cumque, earum autem, id explicabo a? Omnis id praesentium quaerat.
+        Voluptatibus, aperiam!
+      </h3>
+      <img src="https://cdn3d.iconscout.com/3d/premium/thumb/ninja-6853235-5625761.png?f=webp" />
+      <img
+        src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
     </div>
   );
 }
