@@ -1,3 +1,10 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "./tsconfig.json",
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.js",
+    ".eslintrc.js",
+    "**/*.ts",
+    "**/*.tsx"
+  ]
 }

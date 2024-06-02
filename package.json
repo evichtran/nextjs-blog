@@ -6,21 +6,44 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint:style": "stylelint 'src/**/styled.ts' 'src/**/*.tsx'",
+    "lint:es": "eslint . --ext ts,tsx,js",
+    "lint": "yarn lint:es && yarn lint:style",
+    "lint-staged": {
+      "*.{ts,tsx,js,jsx}": [
+        "eslint --cache"
+      ],
+      "styled.ts": [
+        "stylelint --cache"
+      ]
+    },
+    "husky": {
+      "hooks": {
+        "pre-commit": "yarn lint-staged && yarn check:type"
+      }
+    }
   },
   "dependencies": {
+    "next": "14.2.3",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.3"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
     "eslint": "^8",
-    "eslint-config-next": "14.2.3"
+    "eslint-config-next": "14.2.3",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.5",
+    "postcss": "^8",
+    "stylelint": "^16.6.1",
+    "stylelint-a11y": "^1.2.3",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.10.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }
