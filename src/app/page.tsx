@@ -78,7 +78,7 @@ export default function Home() {
         </li>
       </ul>
       <button className="button">Register</button>
-      <h1>NinjaDev Team</h1>
+      <h1 className="text-3xl font-bold underline">NinjaDev Team</h1>
       <h4>
         The team is developed by EvichTran - team leader, senior developer, a
         hacker and a wibu
