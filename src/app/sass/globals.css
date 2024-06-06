@@ -41,6 +41,7 @@ body {
   top: 40px;
   left: 0;
 }
+
 .button {
   --color: rgb(0, 110, 255);
   font-family: "Poppins", sans-serif;
@@ -72,16 +73,19 @@ body {
 .button:hover:before {
   width: 100%;
 }
+
 *,
 *:before,
 *:after {
   box-sizing: border-box;
 }
+
 * {
   margin: 0;
   padding: 0;
   font: inherit;
 }
+
 img,
 picture,
 svg,
@@ -89,18 +93,21 @@ video {
   display: block;
   max-width: 100%;
 }
+
 input,
 select,
 textarea {
   background-color: transparent;
   outline: none;
 }
+
 button {
   cursor: pointer;
   background-color: transparent;
   outline: none;
   border: 0;
 }
+
 body {
   min-height: 100vh;
   font-weight: 400;
@@ -109,6 +116,7 @@ body {
   font-family: "DM sans", sans-serif;
   padding: 10px;
 }
+
 .button2 {
   position: relative;
   color: rgb(255, 0, 0) !important;
@@ -122,26 +130,21 @@ body {
   border-radius: 100rem;
   border: 1px solid rgb(0, 0, 0);
 }
+
 .glowing {
   position: absolute;
   inset: 0;
   border-radius: 100rem;
   padding: 1px;
-  -webkit-mask: linear-gradient(#ff0000 0 0) content-box,
-    linear-gradient(#ff0000 0 0);
+  -webkit-mask: linear-gradient(#ff0000 0 0) content-box, linear-gradient(#ff0000 0 0);
   mask: linear-gradient(#ff0000 0 0) content-box, linear-gradient(#fff, 0 0);
   mask-composite: xor;
   -webkit-mask-composite: xor;
 }
+
 .glowing-inner {
   inset: 0;
-  background: conic-gradient(
-    from 0 at 50% 50%,
-    rgba(255, 255, 255, 0.5) 0deg,
-    rgba(255, 255, 255, 0) 6deg,
-    rgba(255, 255, 255, 0) 310deg,
-    rgba(255, 255, 255, 0.5) 360deg
-  );
+  background: conic-gradient(from 0 at 50% 50%, rgba(255, 255, 255, 0.5) 0deg, rgba(255, 255, 255, 0) 6deg, rgba(255, 255, 255, 0) 310deg, rgba(255, 255, 255, 0.5) 360deg);
   width: 150%;
   aspect-ratio: 1;
   position: absolute;
@@ -150,6 +153,7 @@ body {
   transform: translate(-50%, -50%);
   animation: spinner 2s linear infinite;
 }
+
 @keyframes spinner {
   0% {
     transform: translate(-50%, -50%) rotate(0);
@@ -158,3 +162,5 @@ body {
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
+
+/*# sourceMappingURL=globals.css.map */
