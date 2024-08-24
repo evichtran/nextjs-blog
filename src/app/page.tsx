@@ -78,28 +78,6 @@ export default function Home() {
         </li>
       </ul>
       <button className="button">Register</button>
-      <h1 className="text-3xl font-bold underline">NinjaDev Team</h1>
-      <h4 className="text-2xl">
-        The team is developed by EvichTran - team leader, senior developer, a
-        hacker and a wibu
-      </h4>
-      <h3 className="text-1xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-        mollitia voluptatibus repudiandae dicta hic quisquam omnis in quibusdam
-        cumque, earum autem, id explicabo a? Omnis id praesentium quaerat.
-        Voluptatibus, aperiam!
-      </h3>
-      <button className="button2">
-        <div className="glowing">
-          <div className="glowing-inner"></div>
-        </div>
-        <div className="button-text">Click here to register!</div>
-      </button>
-      <img src="https://cdn3d.iconscout.com/3d/premium/thumb/ninja-6853235-5625761.png?f=webp" />
-      <img
-        src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt=""
-      />
     </div>
   );
 }
